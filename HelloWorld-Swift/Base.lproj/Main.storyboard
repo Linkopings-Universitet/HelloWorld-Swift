@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HelloWorld_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skaka på skärmen!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs1-ue-4Up">
+                                <rect key="frame" x="227" y="289" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eller tryck ctrl-cmd-z i simulatorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ5-60-m5c">
+                                <rect key="frame" x="173" y="318" width="254" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="3vE-fY-oDC"/>
+                                    <constraint firstAttribute="height" constant="21" id="l0v-CH-BSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Du har inte skakat skärmen än" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KCR-Ue-XMu">
+                                <rect key="frame" x="16" y="545" width="568" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CJo-tC-nEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJ5-60-m5c" firstAttribute="top" secondItem="Cs1-ue-4Up" secondAttribute="bottom" constant="8" symbolic="YES" id="5xR-3a-dcR"/>
+                            <constraint firstItem="Cs1-ue-4Up" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="269" id="63h-R0-IBG"/>
+                            <constraint firstItem="Cs1-ue-4Up" firstAttribute="centerX" secondItem="bJ5-60-m5c" secondAttribute="centerX" id="7Gv-ft-blL"/>
+                            <constraint firstAttribute="bottom" secondItem="KCR-Ue-XMu" secondAttribute="bottom" constant="20" symbolic="YES" id="Kve-83-9mK"/>
+                            <constraint firstItem="bJ5-60-m5c" firstAttribute="centerX" secondItem="KCR-Ue-XMu" secondAttribute="centerX" id="MOl-RG-JYH"/>
+                            <constraint firstItem="KCR-Ue-XMu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bgu-dw-hTh"/>
+                            <constraint firstItem="KCR-Ue-XMu" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="d2b-Sd-HPS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="shaleLabel" destination="KCR-Ue-XMu" id="tru-cO-qUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="407"/>
+        </scene>
+    </scenes>
+</document>
