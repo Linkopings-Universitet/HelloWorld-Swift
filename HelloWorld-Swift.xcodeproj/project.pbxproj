@@ -331,6 +331,7 @@
 				INFOPLIST_FILE = "HelloWorld-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -341,6 +342,7 @@
 				INFOPLIST_FILE = "HelloWorld-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -397,6 +399,7 @@
 				B1189E3319D2F3D400C848B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1189E3419D2F3D400C848B6 /* Build configuration list for PBXNativeTarget "HelloWorld-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +408,7 @@
 				B1189E3619D2F3D400C848B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
