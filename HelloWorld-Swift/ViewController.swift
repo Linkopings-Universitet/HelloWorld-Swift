@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         let url = NSBundle.mainBundle().URLForResource("aaa", withExtension: "wav")
         
         // Skapa en ljudspelare som ska spela upp ljudet
-        let player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        let player = try? AVAudioPlayer(contentsOfURL: url!)
         
-        player.prepareToPlay()
-        return player
+        player!.prepareToPlay()
+        return player!
     }()
     
     // Initialisera vår räknarvariabel. Denna ska hålla räkningen på hur många gånger
@@ -49,11 +49,11 @@ class ViewController: UIViewController {
         return true
     }
     
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         // Kollar att rörelsen var en skakning
         if motion == .MotionShake {
             // Skriv ut debug-skrift till loggen
-            println("Skak!")
+            print("Skak!")
             
             // Spela upp ljudet
             playSound()
